@@ -1,0 +1,109 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color: black;
+	color: #EEDDDD;
+}
+/* form styling */
+label.reqfield {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+legend {
+	font-size: 1.5em;
+}
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+}
+
+fieldset {
+	background-color: #434343;
+}
+
+div#formcol1 {
+	
+	float:left;	
+	width: 100%;
+}
+
+#formcol1 li {
+	list-style:none;
+}
+
+div#formcol1 label {
+	float:left;
+	width:7.0em;
+	text-align:right;
+	display:block;
+	padding-right:.3em;	
+	background: #434343;
+	clear:right;
+	color: #EEDDDD;
+	}
+
+label {
+	margin-right: .3em;
+	width: 2.5em;  /* I made this deliberately wide – come up with your own optimal width */
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+}
+
+div#formcol1 ul li {
+	list-style-type:none;
+	margin-left:-2em;
+	margin-bottom:.8em;
+	}
+
+div#formcol1 input {
+	
+	margin-left:1.5em;
+	text-align:left;
+	display:block;
+	clear:right;
+	background-color:#F4F4F4;
+	}
+
+
+/* div for radio buttons and check boxes */
+
+#multchoice {
+	clear:left;
+	margin-left:1%;	
+}
+
+#multchoice input, #multchoice span {
+	float:center;
+}
+
+#multchoice span {	
+	margin: 0 .3em;
+}
+
+.multchoice {
+  display: flex;
+  align-items: center;     /* vertical-center label + radios */
+  margin-bottom: 1rem;     /* space before next fieldset */
+}
+
+.submit-button {
+	margin:1em 0;
+	float:center;
+	width:70%;
+	font-size: 1.25rem;
+	font-weight: 600;  
+}
+.submit-button:hover {
+	background-color:#FFA6A6;
+	color: black;
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #FFA6A6 !important;
+	outline: 4px solid white;    
+	outline-offset: 2px;  
+}
+
+
